@@ -22,7 +22,7 @@ export const NavbarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding: 0 24px;
+    padding: 0 40px;
     max-width: 100%;
 `;
 
@@ -51,6 +51,7 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #222;
+        right: 10px;
     }
 `;
 

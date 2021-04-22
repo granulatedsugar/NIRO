@@ -17,7 +17,10 @@ export const HeroContainer = styled.div`
     right: 0;
     bottom: 0;
   }
-  z-index: 2;
+
+  @media screen and (max-width: 375px) {
+    height: 600px;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -61,7 +64,7 @@ export const HeroContent = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 20px;
+  left: 40px;
   background: transparent;
 `;
 

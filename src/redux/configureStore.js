@@ -1,6 +1,7 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import { Hero } from './hero';
 import { createForms } from 'react-redux-form';
 
 
@@ -11,7 +12,7 @@ export const ConfigureStore = () => {
             // web: Web,
             // mobile: Mobile,
             // design: Design,
-            // hero: Hero,
+            hero: Hero,
             // ...createForms({
             //     contact: ContactForm
             // })

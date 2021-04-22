@@ -12,12 +12,12 @@ const Hero = (props) => {
     return (
       <HeroContainer>
           <HeroBg>
-              <TextBg>&#60;hello &#47;&#62;</TextBg>
+              <TextBg>{props.background}</TextBg>
           </HeroBg>
           <HeroContent>
             <Anime opacity={[0, 1]} translateY={'1em'} delay={(e, i) => i * 1000}>
-              <HeroH1>I'm Nikko Roque</HeroH1>
-              <HeroP>Full-Stack Web Developer</HeroP>
+              <HeroH1>{props.title}</HeroH1>
+              <HeroP>{props.subTitle}</HeroP>
             </Anime>
           </HeroContent>
       </HeroContainer>
