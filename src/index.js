@@ -8,6 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
+    <style>{'body { background-color: #f9f9f9; }'}</style>
     <App />
   </React.StrictMode>,
   document.getElementById('root')

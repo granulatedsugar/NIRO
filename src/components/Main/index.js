@@ -30,7 +30,7 @@ class Main  extends Component {
       title: 'NIRO',
       // Page Headers Info
       about: {
-        title: 'A little something about ME.',
+        title: 'Check out my story...',
         background: '<about />',
         buttonLabel: 'Timeline',
         id: 'timeline'
@@ -79,7 +79,60 @@ class Main  extends Component {
           category: 'Web App',
           background:'https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
         },
-      ]
+      ],
+      mobObj: [
+        {
+          id: 0,
+          lightBg: true,
+          lightText: false,
+          lightTextDesc: false,
+          topLine: "React Native",
+          headline: "Tesla Clone",
+          description:
+            "Landing Page",
+          buttonLabel: "SOURCE CODE",
+          imgStart: false,
+          img: require("../../assets/images/1.png").default,
+          alt: "Phone",
+          dark: false,
+          primary: false,
+          darkText: true,
+        },
+          {
+          id: 1,
+          lightBg: false,
+          lightText: true,
+          lightTextDesc: true,
+          topLine: "React Native",
+          headline: "McDonalds Clone",
+          description:
+            "Simple Menu",
+          buttonLabel: "SOURCE CODE",
+          imgStart: true,
+          img: require("../../assets/images/2.png").default,
+          alt: "Phone",
+          dark: true,
+          primary: true,
+          darkText: false,
+        },
+         {
+          id: 2,
+          lightBg: true,
+          lightText: false,
+          lightTextDesc: false,
+          topLine: "React Native",
+          headline: "Pending",
+          description:
+            "Landing Page",
+          buttonLabel: "SOURCE CODE",
+          imgStart: false,
+          img: require("../../assets/images/3.png").default,
+          alt: "Phone",
+          dark: false,
+          primary: false,
+          darkText: true,
+        }
+      ] 
     }
   }
 
@@ -128,6 +181,7 @@ class Main  extends Component {
           <MobilePage
             title={this.state.mobile.title}
             subTitle={this.state.mobile.subTitle}
+            mobObj={this.state.mobObj}
           />
         );
       }
