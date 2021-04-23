@@ -4,7 +4,9 @@ export const Hero = (state =  { isLoading: true,
                                 errMess: null,
                                 hero:[]}, action) => {
     switch (action.type) {
-        
+        case ActionTypes.ADD_HERO:
+            return {...state, isLoading: false, errMess: null, hero: action.payload};
+
         case ActionTypes.HERO_LOADING:
             return {...state, isLoading: false, errMess: null, hero: []}
         

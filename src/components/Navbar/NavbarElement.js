@@ -66,11 +66,14 @@ export const NavMenu = styled.ul`
     @media screen and (max-width: 800px) {
         display: none;
     }
+
 `;
 
 export const NavItem = styled.li`
     height: 80px;
     display: inline;
+
+    
 `;
 
 export const NavLinks = styled(Link)`
@@ -86,9 +89,10 @@ export const NavLinks = styled(Link)`
     font-weight: 200;
     font-family: 'Roboto', sans-serif;
 
-    &:active {
-        border-bottom: 2px solid #fff;
-    }
+    :active {
+        border-bottom: 2px solid #222;
+    } 
+  
 `;
 
 export const NavBtn = styled.nav`

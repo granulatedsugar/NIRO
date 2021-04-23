@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
+
 
 export const HeroContainer = styled.div`
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -19,7 +21,7 @@ export const HeroContainer = styled.div`
   }
 
   @media screen and (max-width: 375px) {
-    height: 600px;
+    height: 100vh;
   }
 `;
 
@@ -95,4 +97,21 @@ export const HeroP = styled.p`
   @media screen and (max-width: 480px) {
     font-size: 18px;
   }
+`;
+
+export const HeroBtnWrapper = styled.div`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 1rem;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 1rem;
 `;

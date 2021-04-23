@@ -7,9 +7,8 @@ const AboutPage = (props) => {
     return (  
 
         <div>
-            {/* Renders the Jumbotron of the page */}
-            <Hero title={props.title} background={props.background} />
-            <Vertical /> 
+            <Hero title={props.title} background={props.background} buttonLabel={props.buttonLabel} id={props.id}/>
+            <Vertical id="timeline" /> 
         </div>
 
     );

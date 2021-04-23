@@ -40,7 +40,7 @@ class Navbar extends Component {
       <React.Fragment>
         <Nav>
           <NavbarContainer>
-            <NavBrand to="/">NIRO</NavBrand>
+            <NavBrand to="/">{this.props.title}</NavBrand>
             <MobileIcon>
               <FaBars onClick={this.toggleNav} />
             </MobileIcon>
@@ -67,7 +67,7 @@ class Navbar extends Component {
                   </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/signin">LET'S TALK</SidebarRoute>
+                    <SidebarRoute to="/contact">LET'S TALK</SidebarRoute>
                 </SideBtnWrap>
               </SidebarWrapper>
             </SidebarContainer>
@@ -86,7 +86,7 @@ class Navbar extends Component {
               </NavItem>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/signin">LET'S TALK</NavBtnLink>
+                <NavBtnLink to="/contact">LET'S TALK</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
