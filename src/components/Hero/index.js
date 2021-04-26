@@ -31,7 +31,7 @@ const Hero = (props) => {
           <HeroP>{props.subTitle}</HeroP>
           <HeroBtnWrapper>
             <Button
-              to={props.id}
+              href={props.id}
               onMouseEnter={onHover}
               onMouseLeave={onHover}
             >

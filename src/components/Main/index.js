@@ -33,7 +33,7 @@ class Main  extends Component {
         title: 'Check out my story...',
         background: '<about />',
         buttonLabel: 'Timeline',
-        id: 'timeline'
+        id: '#timeline'
       },
       web: {
         title: 'Web Application',
