@@ -12,8 +12,7 @@ class Contact extends Component {
             email: '',
             message: '',
             disabled: false,
-            emailSent: null,
-            hidden: false
+            emailSent: null
          }
     }
 
@@ -44,7 +43,13 @@ class Contact extends Component {
                     emailSent: false
                 });
             });
-            e.target.reset()
+            this.setState({ 
+                name: '',
+                email: '',
+                message: '',
+                disabled: false,
+                emailSent: null
+             })
     }
 
     render() { 

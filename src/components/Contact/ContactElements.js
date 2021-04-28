@@ -70,6 +70,7 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
 
     &:hover {
         background-color: #05e8ba;
