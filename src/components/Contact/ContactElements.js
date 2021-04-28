@@ -9,6 +9,7 @@ export const Form = styled.form`
     align-items: center;
     display: block;
     height: 55vh;
+    margin-bottom: 150px;
 `;
 
 export const Group = styled.div`
