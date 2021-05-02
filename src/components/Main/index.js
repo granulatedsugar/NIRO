@@ -17,7 +17,7 @@ class Main extends Component {
       title: 'NIRO',
       // Page Headers Info
       home: {
-        title: 'Hey there, I\'m Nikko👋',
+        title: 'Hey there, I\'m Nikko',
         subTitle: 'Full-Stack Web Developer',
         background: '<root />',
         buttonLabel: 'My Journey',

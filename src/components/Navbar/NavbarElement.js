@@ -24,6 +24,10 @@ export const NavbarContainer = styled.div`
     width: 100%;
     padding: 0 40px;
     max-width: 100%;
+
+    @media screen and (max-width: 540px) {
+      padding: 0 20px;
+    }
 `;
 
 export const NavBrand = styled(Link)`
@@ -51,7 +55,7 @@ export const MobileIcon = styled.div`
         font-size: 1.8rem;
         cursor: pointer;
         color: #222;
-        right: 10px;
+        right: 0;
     }
 `;
 

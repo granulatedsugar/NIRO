@@ -4,7 +4,7 @@ export const TitleContainer = styled.div`
     display: flex;
     justify-content: left;
     position: relative;
-    min-height: 25vh;
+    height: 300px;
 
     &:before {
         content: "";
@@ -15,7 +15,7 @@ export const TitleContainer = styled.div`
         bottom: 0;
     }
     @media screen and (max-width: 540px) {
-        min-height: 50vh;
+      height: 250px;
   }
 `;
 
@@ -28,6 +28,10 @@ export const TitleWrapper = styled.div`
   left: 40px;
   top: 80px;
   background: transparent;
+
+  @media screen and (max-width: 540px) {
+      left: 20px;
+  }
 `;
 
 export const TitleH1 = styled.h1`
