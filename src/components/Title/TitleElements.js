@@ -4,7 +4,7 @@ export const TitleContainer = styled.div`
     display: flex;
     justify-content: left;
     position: relative;
-    min-height: 30vh;
+    min-height: 25vh;
 
     &:before {
         content: "";
@@ -14,8 +14,8 @@ export const TitleContainer = styled.div`
         right: 0;
         bottom: 0;
     }
-    @media screen and (max-width: 450px) {
-        min-height: 20h;
+    @media screen and (max-width: 540px) {
+        min-height: 50vh;
   }
 `;
 
