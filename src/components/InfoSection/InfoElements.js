@@ -100,3 +100,32 @@ export const Img =  styled.img`
         margin: 10px;
     }
 `;
+
+export const Button = styled.a`
+    border-radius: 50px;
+    background: ${({primary}) => (primary ? '#f9f9f9' : '#010606')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '50px 48px' : '10px 20px')};
+    color: ${({dark}) => (dark ? '#010606' : '#fff')};
+    white-space: nowrap;
+    padding: 15px 20px;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: auto;
+    text-decoration: none;
+
+    &:hover {
+        background-color: #05e8ba;
+        background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+        color: #fff;
+    }
+
+    @media screen and (max-width: 640px) {
+        font-size: 1rem;
+    }
+`;

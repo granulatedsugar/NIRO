@@ -21,6 +21,7 @@ class MobilePage extends Component {
           darkText={mobObjs.darkText}
           description={mobObjs.description}
           buttonLabel={mobObjs.buttonLabel}
+          link={mobObjs.link}
           img={mobObjs.img}
           alt={mobObjs.alt}
           primary={mobObjs.primary}

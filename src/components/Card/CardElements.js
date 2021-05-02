@@ -74,10 +74,10 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 
 export const Button = styled.a`
     border-radius: 50px;
-    background: #222;
+    background: #fff;
     white-space: nowrap;
     padding: 8px 10px;
-    color: #fff;
+    color: #222;
     font-size: 1rem;
     outline: none;
     border: none;
@@ -85,7 +85,7 @@ export const Button = styled.a`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100px;
+    width: 100px;
     text-decoration: none;
 
     &:hover {

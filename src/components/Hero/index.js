@@ -31,7 +31,7 @@ const Hero = (props) => {
           <HeroP>{props.subTitle}</HeroP>
           <HeroBtnWrapper>
             <Button
-              href={props.id}
+              to='/about'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
             >

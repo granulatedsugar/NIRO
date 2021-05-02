@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "../ButtonElement";
 import Anime from "react-anime";
 import {
   InfoContainer,
@@ -14,6 +13,7 @@ import {
   Column2,
   ImgWrap,
   Img,
+  Button
 } from "./InfoElements";
 
 const InfoSection = (props) => {
@@ -30,7 +30,7 @@ const InfoSection = (props) => {
                 <SubTitle darkText={props.darkText}>{props.description}</SubTitle>
                 <BtnWrap>
                   <Button
-                    to="home"
+                    href={props.link}
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -38,6 +38,7 @@ const InfoSection = (props) => {
                     primary={props.primary ? 1 : 0}
                     dark={props.dark ? 1 : 0}
                     dark2={props.dark2 ? 1 : 0}
+                    target='_blank'
                   >
                     {props.buttonLabel}
                   </Button>

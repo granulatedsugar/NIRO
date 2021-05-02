@@ -1,13 +1,13 @@
 // About  Page
 import React from 'react';
-import Hero from '../components/Hero';
+import Title from '../components/Title';
 import Vertical from '../components/VerticalTimeline';
 
 const AboutPage = (props) => {
     return (  
 
         <div>
-            <Hero title={props.title} background={props.background} buttonLabel={props.buttonLabel} id={props.id}/>
+            <Title title={props.title} subTitle={props.subTitle} />
             <Vertical id="timeline" /> 
         </div>
 

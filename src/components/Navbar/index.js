@@ -76,7 +76,7 @@ class Navbar extends Component {
                 <NavLinks to="/about">About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/web">Web</NavLinks>
+                <NavLinks to="/web" >Web</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/mobile">Mobile</NavLinks>

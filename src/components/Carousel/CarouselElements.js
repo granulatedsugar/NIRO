@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CarouselContainer = styled.div`
   display: flex;
   position: relative;
-  min-height: 30vh;
+  min-height: 60vh;
 
   &:before {
     content: "";
@@ -23,7 +23,7 @@ export const CarouselWrapper = styled.div`
   max-width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
   padding: 0 50px;

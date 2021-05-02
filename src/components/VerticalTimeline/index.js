@@ -9,14 +9,29 @@ import {
   FaPython,
   FaGraduationCap,
   FaSchool,
-  FaUser
+  FaUser,
+  FaFilePdf,
 } from "react-icons/fa";
 import "react-vertical-timeline-component/style.min.css";
+import { Link, Resume } from "./VerticalTimelineElements";
 
 const Vertical = () => {
-
   return (
     <VerticalTimeline id="timeline">
+      <VerticalTimelineElement
+        className="vertical-timeline-element--work"
+        date="Updated"
+        iconStyle={{ background: "#222", color: "#fff" }}
+        icon={<FaFilePdf />}
+      >
+        <h3 className="vertical-timeline-element-title">Resume</h3>
+        <h4 className="vertical-timeline-element-subtitle">Updated 03.2021</h4>
+        <Resume>
+          <Link href="https://nikkoroque.com/Resume/Resume-of-Nicholas-Roque.pdf" target='_blank'>
+            <FaFilePdf size={28} />
+          </Link>
+        </Resume>
+      </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         contentStyle={{ backgroundColor: "#EEE", color: "#222" }}
@@ -25,13 +40,17 @@ const Vertical = () => {
         iconStyle={{ background: "#222", color: "#fff" }}
         icon={<FaBriefcase />}
       >
-        <h3 className="vertical-timeline-element-title">Operations Specialist - West Coast</h3>
-        <h4 className="vertical-timeline-element-subtitle">IKEA North America</h4>
+        <h3 className="vertical-timeline-element-title">
+          Operations Specialist - West Coast
+        </h3>
+        <h4 className="vertical-timeline-element-subtitle">
+          IKEA North America
+        </h4>
         <p>
-        Responsible for a high performing daily operations and an 
-        efficient fulfilment network connected to all Central Fulfillment 
-        unit types on the market through identifying and acting on 
-        improvement potentials in operational performance.
+          Responsible for a high performing daily operations and an efficient
+          fulfilment network connected to all Central Fulfillment unit types on
+          the market through identifying and acting on improvement potentials in
+          operational performance.
         </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
@@ -41,12 +60,10 @@ const Vertical = () => {
         icon={<FaReact />}
       >
         <h3 className="vertical-timeline-element-title">
-        Full-Stack Web Dev with React Specialization
+          Full-Stack Web Dev with React Specialization
         </h3>
         <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-        <p>
-          Coursera : The Hongkong University of Science and Technology
-        </p>
+        <p>Coursera : The Hongkong University of Science and Technology</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -68,10 +85,12 @@ const Vertical = () => {
         <h4 className="vertical-timeline-element-subtitle">
           IKEA Tejon California
         </h4>
-        <p>Responsible for maintaining system tools and applications, 
-        creation of Oracle SQL queries for data analysis, and 
-        maintenance of IT Assets. Developed and launched a Yard 
-        Management Application for the site to increase efficiency.</p>
+        <p>
+          Responsible for maintaining system tools and applications, creation of
+          Oracle SQL queries for data analysis, and maintenance of IT Assets.
+          Developed and launched a Yard Management Application for the site to
+          increase efficiency.
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
@@ -79,31 +98,35 @@ const Vertical = () => {
         iconStyle={{ background: "#222", color: "#fff" }}
         icon={<FaBriefcase />}
       >
-        <h3 className="vertical-timeline-element-title">
-          IT
-        </h3>
-        <h4 className="vertical-timeline-element-subtitle">Nestle Bakersfield California</h4>
-        <p>Responsible for implementing and managing security or 
-        integrity and backup procedures. Testing and modifying 
-        systems to ensure that they operate reliably, consulting users 
-        to ascertain needs and to ensure that facilities meet user or 
-        project requirements.</p>
+        <h3 className="vertical-timeline-element-title">IT</h3>
+        <h4 className="vertical-timeline-element-subtitle">
+          Nestle Bakersfield California
+        </h4>
+        <p>
+          Responsible for implementing and managing security or integrity and
+          backup procedures. Testing and modifying systems to ensure that they
+          operate reliably, consulting users to ascertain needs and to ensure
+          that facilities meet user or project requirements.
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="Sep 2014 - Sep 2015"
         iconStyle={{ background: "#222", color: "#fff" }}
-        icon={<FaBriefcase/>}
+        icon={<FaBriefcase />}
       >
         <h3 className="vertical-timeline-element-title">
           Geek Squad / Microsoft Specialist
         </h3>
-        <h4 className="vertical-timeline-element-subtitle">BestBuy Bakersfield California</h4>
-        <p>Troubleshoots and fix devices for clients, test and certify 
-        devices. Engage with customers using selling skills to provide 
-        solutions to their technology challenges. Leading and 
-        motivating the team to make sure that we’re hitting our 
-        revenues. </p>
+        <h4 className="vertical-timeline-element-subtitle">
+          BestBuy Bakersfield California
+        </h4>
+        <p>
+          Troubleshoots and fix devices for clients, test and certify devices.
+          Engage with customers using selling skills to provide solutions to
+          their technology challenges. Leading and motivating the team to make
+          sure that we’re hitting our revenues.{" "}
+        </p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"

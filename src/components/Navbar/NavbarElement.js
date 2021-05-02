@@ -89,9 +89,9 @@ export const NavLinks = styled(Link)`
     font-weight: 200;
     font-family: 'Roboto', sans-serif;
 
-    :active {
-        border-bottom: 2px solid #222;
-    } 
+    :hover {
+        border-bottom: 3px solid #222;
+    }
   
 `;
 

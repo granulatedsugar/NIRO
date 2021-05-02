@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import { connect } from 'react-redux';
-import { fetchHero } from '../../redux/ActionCreators';
 import HomePage from '../../pages/HomePage';
 import AboutPage from '../../pages/AboutPage';
 import WebPage from '../../pages/WebPage';
@@ -12,40 +10,33 @@ import DesignPage from '../../pages/DesignPage';
 import ContactPage from '../../pages/ContactPage';
 
 
-const mapStateToProps = state => {
-  return {
-    hero: state.hero
-  }
-}
-
-const mapDispatchToProps = (dispatch) => ({
-  fetchHero: () => dispatch(fetchHero())
-});
-
-class Main  extends Component {
-
+class Main extends Component {
   constructor(props) {
     super(props);
-    this.state = {
+    this.state=  {
       title: 'NIRO',
       // Page Headers Info
+      home: {
+        title: 'Hey there, I\'m Nikko👋',
+        subTitle: 'Full-Stack Web Developer',
+        background: '<root />',
+        buttonLabel: 'My Journey',
+      },
       about: {
-        title: 'Check out my story...',
+        title: 'Check out my journey...',
         background: '<about />',
-        buttonLabel: 'Timeline',
-        id: '#timeline'
       },
       web: {
         title: 'Web Application',
-        subTitle: 'Projects'
+        subTitle: 'Personal Projects'
       },
       mobile: {
         title: 'Mobile Application',
-        subTitle: 'Projects'
+        subTitle: 'Personal Projects'
       },
       design: {
         title: 'Web Design',
-        subTitle: 'Projects'
+        subTitle: 'Contract Projects'
       },
       contact: {
         title: 'Let\'s Talk',
@@ -53,31 +44,24 @@ class Main  extends Component {
       webapp: [
         {
           id: 0,
-          link: 'https://www.google.com',
-          title: 'Web App One',
-          category: 'Web App',
-          background:'https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+          link: 'https://triacore.nikkoroque.com',
+          title: 'Triacore',
+          category: 'React | Styled Components',
+          background: require("../../assets/images/web-app/triacore.png").default,
         },
         {
           id: 1,
-          link: 'https://www.google.com',
-          title: 'Web App Two',
-          category: 'Web App',
-          background:'https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+          link: 'https://packit.nikkoroque.com',
+          title: 'PackIt Basic',
+          category: 'React | Commerce JS | Material-Ui',
+          background: require("../../assets/images/web-app/e-commerce.png").default,
         },
         {
           id: 2,
-          link: 'https://www.google.com',
-          title: 'Web App Three',
-          category: 'Web App',
-          background:'https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
-        },
-        {
-          id: 3,
-          link: 'https://www.google.com',
-          title: 'Web App Four',
-          category: 'Web App',
-          background:'https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60'
+          link: 'https://exorp.nikkoroque.com',
+          title: 'Exorp',
+          category: 'React App',
+          background: require("../../assets/images/web-app/exorp.png").default,
         },
       ],
       mobObj: [
@@ -91,9 +75,10 @@ class Main  extends Component {
           description:
             "Landing Page",
           buttonLabel: "SOURCE CODE",
+          link: 'https://github.com/granulatedsugar/tesla-clone',
           imgStart: false,
           img: require("../../assets/images/1.png").default,
-          alt: "Phone",
+          alt: "Tesla-iPhone-Mock",
           dark: false,
           primary: false,
           darkText: true,
@@ -103,14 +88,15 @@ class Main  extends Component {
           lightBg: false,
           lightText: true,
           lightTextDesc: true,
-          topLine: "React Native",
-          headline: "McDonalds Clone",
+          topLine: "React Native | TypeScript",
+          headline: "WassApp",
           description:
-            "Simple Menu",
+            "Mobile App Chat Platform",
           buttonLabel: "SOURCE CODE",
+          link: 'https://github.com/granulatedsugar/WassApp',
           imgStart: true,
           img: require("../../assets/images/2.png").default,
-          alt: "Phone",
+          alt: "WassApp-iPhone-Mock",
           dark: true,
           primary: true,
           darkText: false,
@@ -121,13 +107,14 @@ class Main  extends Component {
           lightText: false,
           lightTextDesc: false,
           topLine: "React Native",
-          headline: "Pending",
+          headline: "McDonalds Clone",
           description:
-            "Landing Page",
+            "Simple Menu",
           buttonLabel: "SOURCE CODE",
+          link: 'https://github.com/granulatedsugar/mcdonalds-basic-menu',
           imgStart: false,
           img: require("../../assets/images/3.png").default,
-          alt: "Phone",
+          alt: "McDo-iPhone-Mock",
           dark: false,
           primary: false,
           darkText: true,
@@ -136,20 +123,14 @@ class Main  extends Component {
     }
   }
 
-    componentDidMount() {
-      this.props.fetchHero();
-    }
-
-    render() {
-
+      render() {
       const Home = () => {
         return (
           <HomePage
-                title={this.props.hero.hero.title}
-                subTitle={this.props.hero.hero.subTitle}
-                // hero={this.props.hero.hero.filter((hero) => hero.assign)[0]}
-                heroLoading={this.props.hero.isLoading}
-                heroErrMess={this.props.hero.errMess} 
+          background={this.state.home.background}
+          title={this.state.home.title}
+          subTitle={this.state.home.subTitle}
+          buttonLabel={this.state.home.buttonLabel}
           />
         );
       };
@@ -206,7 +187,7 @@ class Main  extends Component {
       
         return (
             <div>
-                <Navbar title={this.state.title}/>
+                <Navbar title={this.state.title} />
                   <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/about" component={About} />
@@ -221,4 +202,4 @@ class Main  extends Component {
     }
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Main));
+export default withRouter((Main));
