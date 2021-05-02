@@ -5,9 +5,6 @@ import { CarouselContainer, CarouselWrapper } from "./CarouselElements";
 
 
 class Carousel extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   makeItem = (webapp) => {
     return webapp.map((webapps) => {

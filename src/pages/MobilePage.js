@@ -4,9 +4,6 @@ import Title from "../components/Title";
 
 
 class MobilePage extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   makeSection = (mobObj) => {
     return mobObj.map((mobObjs) => {

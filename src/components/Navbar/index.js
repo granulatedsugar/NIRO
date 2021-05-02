@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaBars, FaEnvelope } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,

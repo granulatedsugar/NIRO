@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import emailjs from 'emailjs-com';
-import ParticleEffectButton from 'react-particle-effect-button'
 import { Control, Form, Group, MessageBody, Button, NotificationP  } from './ContactElements';
 
 

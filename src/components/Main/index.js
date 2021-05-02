@@ -195,6 +195,7 @@ class Main extends Component {
                     <Route exact path="/mobile" component={Mobile} />
                     <Route exact path="/design" component={Design} />
                     <Route exact path="/contact" component={Contact} />
+                    <Redirect to='/' />
                   </Switch>
                 <Footer />
             </div>
