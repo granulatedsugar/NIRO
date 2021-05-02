@@ -17,7 +17,7 @@ const Footer = () => {
                     <SocialIconLink href='https://www.twitter.com/nikkoroque' 
                         target='_blank'
                         aria-label='Twitter'><FaTwitter /></SocialIconLink>
-                    <SocialIconLink href='roquenikko@gmail.com' 
+                    <SocialIconLink href='mailto:roquenikko@gmail.com' 
                         target='_blank'
                         aria-label='Gmail'><FaEnvelope /></SocialIconLink>
                 </SocialIcons>
