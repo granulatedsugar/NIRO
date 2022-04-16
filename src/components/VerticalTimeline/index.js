@@ -25,9 +25,12 @@ const Vertical = () => {
         icon={<FaFilePdf />}
       >
         <h3 className="vertical-timeline-element-title">Resume</h3>
-        <h4 className="vertical-timeline-element-subtitle">Updated 03.2021</h4>
+        <h4 className="vertical-timeline-element-subtitle">Updated 01.2022</h4>
         <Resume>
-          <Link href="https://nikkoroque.com/Resume/Resume-of-Nicholas-Roque.pdf" target='_blank'>
+          <Link
+            href="https://nikkoroque.com/Resume/Resume-of-Nicholas-Roque.pdf"
+            target="_blank"
+          >
             <FaFilePdf size={28} />
           </Link>
         </Resume>

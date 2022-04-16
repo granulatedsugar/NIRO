@@ -1,9 +1,9 @@
 import React from "react";
 import Title from "../components/Title";
 import Mansory from "../components/Mansory";
-import { photos } from "./DesignPhotos/photos";
+import { photos } from "./DashboardPhotos/photos";
 
-const DesignPage = (props) => {
+const BiPage = (props) => {
   return (
     <div>
       <Title title={props.title} subTitle={props.subTitle} />
@@ -12,4 +12,4 @@ const DesignPage = (props) => {
   );
 };
 
-export default DesignPage;
+export default BiPage;

@@ -56,7 +56,13 @@ class Navbar extends Component {
                   <SidebarLink to="/about" onClick={this.toggleNav}>
                     About
                   </SidebarLink>
-                  <SidebarLink to="web" onClick={this.toggleNav}>
+                  <SidebarLink
+                    to="/businessIntelligence"
+                    onClick={this.toggleNav}
+                  >
+                    Business Intelligence
+                  </SidebarLink>
+                  <SidebarLink to="/web" onClick={this.toggleNav}>
                     Web
                   </SidebarLink>
                   <SidebarLink to="/mobile" onClick={this.toggleNav}>
@@ -67,7 +73,7 @@ class Navbar extends Component {
                   </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/contact">LET'S TALK</SidebarRoute>
+                  <SidebarRoute to="/contact">LET'S TALK</SidebarRoute>
                 </SideBtnWrap>
               </SidebarWrapper>
             </SidebarContainer>
@@ -76,7 +82,12 @@ class Navbar extends Component {
                 <NavLinks to="/about">About</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/web" >Web</NavLinks>
+                <NavLinks to="/businessIntelligence">
+                  Business Intelligence
+                </NavLinks>
+              </NavItem>
+              <NavItem>
+                <NavLinks to="/web">Web</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/mobile">Mobile</NavLinks>
@@ -86,7 +97,7 @@ class Navbar extends Component {
               </NavItem>
             </NavMenu>
             <NavBtn>
-                <NavBtnLink to="/contact">LET'S TALK</NavBtnLink>
+              <NavBtnLink to="/contact">LET'S TALK</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>
