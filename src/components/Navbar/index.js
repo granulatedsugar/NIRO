@@ -87,7 +87,7 @@ class Navbar extends Component {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/web">Web</NavLinks>
+                <NavLinks to="/java-web">Native & Web</NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks to="/mobile">Mobile</NavLinks>

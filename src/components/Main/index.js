@@ -31,8 +31,8 @@ class Main extends Component {
         subTitle: "Work Projects",
       },
       web: {
-        title: "Web Application",
-        subTitle: "Personal Projects",
+        title: "Java & Web Applications",
+        subTitle: "Projects",
       },
       mobile: {
         title: "Mobile Application",
@@ -48,7 +48,7 @@ class Main extends Component {
       webapp: [
         {
           id: 0,
-          link: "https://triacore.nikkoroque.com",
+          link: "https://www.triacore.com",
           title: "Triacore",
           category: "React | Styled Components",
           background: require("../../assets/images/web-app/triacore.png")
@@ -56,17 +56,17 @@ class Main extends Component {
         },
         {
           id: 1,
-          link: "https://packit.nikkoroque.com",
-          title: "PackIt Basic",
-          category: "React | Commerce JS | Material-Ui",
+          link: "https://vellora.com.ph/",
+          title: "Vellora Jewelry",
+          category: "React | WooCommerce | Wordpress | MySQL",
           background: require("../../assets/images/web-app/e-commerce.png")
             .default,
         },
         {
           id: 2,
-          link: "https://exorp.nikkoroque.com",
-          title: "Exorp",
-          category: "React App",
+          link: "https://granulatedsugar.github.io/FIVE/#",
+          title: "MotorPH Enterprise System",
+          category: "Java | JavaFX | MySQL | CSS",
           background: require("../../assets/images/web-app/exorp.png").default,
         },
       ],
@@ -208,7 +208,7 @@ class Main extends Component {
             path="/businessIntelligence"
             component={BusinessIntelligence}
           />
-          <Route exact path="/web" component={Web} />
+          <Route exact path="/java-web" component={Web} />
           <Route exact path="/mobile" component={Mobile} />
           <Route exact path="/design" component={Design} />
           <Route exact path="/contact" component={Contact} />
